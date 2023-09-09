@@ -13,8 +13,17 @@ body {
     line-height: 40px;
     text-align: center;
     padding-top: 100px;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
     color: #4E4E4E;
+}
+.title::after {
+    content: '';
+    display: block;
+    text-align: center;
+    height: 1px;
+    width: 76px;
+    background-color: #18CFAB;
+    margin: 30px 0 0 690px ;
 }
 
 button {
@@ -25,23 +34,40 @@ button {
     border: none;
     cursor: pointer;
     color: #FFFFFF;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .grin-line {
-    text-align: center;
+    width: 76px;
     height: 1px;
-    width: 76px;
     background-color: #18CFAB;
+    border: none;
+    /*margin-bottom: 5px;*/
+    display: block;
 }
+/*.grin-line:after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*    height: 5px;*/
+/*    width: 76px;*/
+/*    background-color: red;*/
+/*    color: red;*/
+/*    margin: 30px 0 10px 540px ;*/
+/*}*/
 
-.grin-line2 {
-    text-align: center;
-    height: 4px;
-    width: 76px;
-    background-color: #18CFAB;
-    margin-bottom: 70px;
-    margin-left: 575px;
-}
+/*.grin-line2 {*/
+/*    text-align: center;*/
+/*    height: 1px;*/
+/*    width: 76px;*/
+/*    background-color: #18CFAB;*/
+/*    margin-bottom: 70px;*/
+/*    margin-left: 575px;*/
+/*}*/
 
 
 /* header ======================================== */
@@ -75,7 +101,7 @@ button {
 
 .main-nav-item a {
     color: rgb(255, 252, 252, 60%);
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 .main-nav-item a:hover {
@@ -137,16 +163,16 @@ button {
 .btn-explore {
     margin-right: 0.5rem;
     padding: 20px 17px;
-    border: transparent;
     color: #FFFFFF;
     background-color: #18CFAB;
+    box-shadow: 0 -5px 1px 0 #FFFFFF;
 }
 
 .btn-purchase {
     color: #FFFFFF;
     background-color:  #00CBF6;
     margin-left: 0.5rem;
-    border: transparent;
+    box-shadow: 0 -5px 1px 0 #FFFFFF;
 }
 
 /* section-options =========================================== */
@@ -247,6 +273,7 @@ button {
     font-size: 16px;
     line-height: 42px;
 }
+
 
 .services-tabs-nav-item:hover {
     border: 1px solid #18CFAB;
